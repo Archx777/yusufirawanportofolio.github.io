@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #f4f4f4;
     color: #222;
@@ -48,7 +50,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #ffffff, #eaeaea);
+    background: linear-gradient(135deg, #ffffff, #dfe9f3);
     text-align: center;
 }
 
@@ -102,4 +104,14 @@ footer {
     background: white;
     text-align: center;
     margin-top: 50px;
+}
+.fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
 }
